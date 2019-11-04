@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_homepage"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"/>
+
+    <item
+        android:id="@+id/item_offline"
+        android:icon="@drawable/ic_library_music_black_24dp"
+        android:title="@string/title_offline"/>
+
+    <item
+        android:id="@+id/item_singer"
+        android:icon="@drawable/ic_song_search"
+        android:title="@string/title_search"/>
+    <item
+        android:id="@+id/item_gernes"
+        android:icon="@drawable/ic_different_squares"
+        android:title="@string/title_gernes"/>
+
+</menu>

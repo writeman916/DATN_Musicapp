@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/cl_mini"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mini_gradient"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar_mini"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:src="@drawable/default_avatar_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_mini"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_white_100"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/iv_avatar_mini"
+        app:layout_constraintRight_toLeftOf="@+id/button_previous_mini"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar_mini"
+        tool:text="asasdf sadf sadf sadf sadf sadf sadf asdf sadf sad sadddf"
+        />
+
+    <TextView
+        android:id="@+id/tv_author_mini"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:ellipsize="end"
+        android:textColor="#FDFFDB"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/iv_avatar_mini"
+        app:layout_constraintRight_toLeftOf="@+id/button_previous_mini"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_mini"
+        tool:text="asdfasfadf"
+        />
+
+    <View
+        android:id="@+id/view_mini_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/button_previous_mini"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/button_play_mini"
+        app:layout_constraintRight_toLeftOf="@id/button_play_mini"
+        app:layout_constraintTop_toTopOf="@+id/button_play_mini"
+        app:srcCompat="@drawable/ic_previous_button"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/button_play_mini"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button_next_mini"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play_button"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/button_next_mini"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_next_button"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

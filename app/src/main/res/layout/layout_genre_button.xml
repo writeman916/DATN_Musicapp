@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+    <ImageView
+        android:id="@+id/iv_genre"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:contentDescription="@string/genre"
+        android:scaleType="fitXY"
+        tools:src="@drawable/default_avatar_song"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_black"
+        android:maxLines="1"
+        android:textColor="@color/color_white_100"
+        android:textSize="@dimen/sp_18"
+        tools:text="CCCCCCCC"
+        />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_italic"
+        android:maxLines="1"
+        android:textColor="@color/color_white_80"
+        android:textSize="@dimen/sp_16"
+        tools:text="CCCCCCCC"
+        />
+</LinearLayout>
